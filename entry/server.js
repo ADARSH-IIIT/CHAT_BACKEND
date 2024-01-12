@@ -21,7 +21,7 @@ connect_to_db(process.env.URL)
 
 server.use(cookiePARSER())
 server.use(express.json())
-server.use(   cors(  {credentials: true, origin: 'http://localhost:5000'}   )      )
+server.use(   cors(  {credentials: true, origin: 'http://localhost:3000'}   )      )
 
 
 
