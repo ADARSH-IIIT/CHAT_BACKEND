@@ -7,7 +7,7 @@ async function check_login(req , res , next){
     
     try {
 
-        
+        console.log(req.cookies , "cookies stored at check login");
       if(req.cookies.logintoken== 'undefined' || req.cookies.logintoken== undefined){
          return res.json({  loginerror : true  ,mssg:"oops!! u r not logged in :("}) }
 
