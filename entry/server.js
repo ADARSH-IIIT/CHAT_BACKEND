@@ -21,7 +21,7 @@ connect_to_db(process.env.URL)
 
 server.use(cookiePARSER())
 server.use(express.json())
-server.use(   cors(  {credentials: true, origin: 'http://localhost:3000'}   )      )
+server.use(   cors(  {credentials: true, origin: 'https://chat-frontend-secure-o74pkd8l2-adarsh-dwivedis-projects.vercel.app'}   )      )
 
 
 
@@ -35,7 +35,7 @@ server.use(messageROUTER)
 
 const newserver = http.createServer(  server   )
 
-const BackendSwitch = new Server(  newserver  , {  cors : { origin : "http://localhost:3000" } } )
+const BackendSwitch = new Server(  newserver  , {  cors : { origin : "https://chat-frontend-secure-o74pkd8l2-adarsh-dwivedis-projects.vercel.app/" } } )
 
 
 
