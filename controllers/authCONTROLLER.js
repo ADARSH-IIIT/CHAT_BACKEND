@@ -317,7 +317,7 @@ async function set_jwt(req , res){
 
 
   //writing cookie details
-  const cookieoption = {  httpOnly : true , maxAge : 1*60*60*24*1000 , secure : false }
+  const cookieoption = {  httpOnly : true , maxAge : 1*60*60*24*1000 , secure : true , sameSite : "None" }
 
 
   // setting token and cookie details to cookie in frontend
